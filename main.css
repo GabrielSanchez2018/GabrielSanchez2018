@@ -1,0 +1,407 @@
+/* font family
+    font-family: 'Monoton', cursive;
+    font-family: 'Lobster', cursive; --- UGLY
+    font-family: 'Anton', sans-serif;
+*/
+
+html {
+    background: white;
+    /* blue and green
+    background-image: linear-gradient(to right top, #2f73d8, #00a1f7, #00c4d7, #00de86, #a8eb12);
+    */
+}
+#wrapper_1 {
+    background: white;
+    width: 70%;
+    height: 1000px;
+    position: static;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid;
+    z-index: 1;
+}
+/*****************Navigation************/
+
+ul {
+    background-color: black;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    margin-bottom: -150px;
+    border-bottom: 1px solid black;
+    z-index: 1;
+}
+li {
+    float: left;
+}
+li a {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.999em;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    color: lightsalmon;
+    padding-bottom: 5px;
+}
+.leftheader {
+    float: right;
+    margin-right: 50px;
+}
+/* Vertical Text */
+
+.vertical_text {
+    background-color: lightsalmon;
+    height: auto;
+    width: 50px;
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+    position: absolute;
+    z-index: 0;
+}
+/* Vertical line */
+
+.vl {
+    border-left: 6px solid lightseagreen;
+    height: 800px;
+    width: .1px;
+    position: absolute;
+    background-color: white;
+}
+#vertical_text {
+    color: black;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    text-align: center;
+    margin-right: 50px;
+    position: relative;
+    z-index: 0;
+}
+/*Key frames for the vertical text (porfolio) */
+
+#vertical_text, .vertical_text {
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-top: 95px;
+    margin-bottom: 60px;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: bounceInUP;
+    animation-name: bounceInUP;
+}
+@-webkit-keyframes bounceInUP {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(200px);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translateY(+30px);
+    }
+    80% {
+        -webkit-transform: translateY(10px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+    }
+}
+@keyframes bounceInUP {
+    0% {
+        opacity: 0;
+        transform: translateY(2000px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    80% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+/*Name Div*/
+
+.gabrielName {
+    background-color: lightblue;
+    /* to be changed */
+    width: 25%;
+    height: 200px;
+    background-color: none;
+    margin-left: 75px;
+    margin-top: 50px;
+    position: absolute;
+}
+#gabriel_lastname {
+    color: black;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 100px;
+    margin-top: -70px;
+    padding-top: -20px;
+    writing-mode: none;
+    /* (vertical-lr)This code will place the text in vertical order */
+    text-orientation: mixed;
+    /* This code will place the text in vertical order */
+}
+#gabrielName {
+    color: white;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 100px;
+    padding-top: 0px;
+    writing-mode: none;
+    /* (vertical-lr)This code will place the text in vertical order */
+    text-orientation: mixed;
+    /* This code will place the text in vertical order */
+}
+/* Image *****/
+
+.gabo_Photo {
+    background-color: none;
+    margin-top: 500px;
+    margin-left: 50px;
+    margin-bottom: -10px;
+    border-bottom: 10px;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+}
+/* This is the Paragraph description */
+
+/*This wrapper is for the paragraph */
+
+#wrapper {
+    background-color: none;
+    /* to be changed */
+    width: 600px;
+    height: 400px;
+    margin-left: 600px;
+    margin-top: 500px;
+    position: absolute;
+}
+.about_me {
+    background-color: none;
+    font-family: 'Anton', sans-serif;
+    color: black;
+    font-size: 30px;
+    margin-top: 0;
+    text-align: justify;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: auto;
+    position: absolute;
+}
+/*key frames bounce in from right to left side*/
+
+.gabrielName, .about_me, .vertical_text, .bioSite_image {
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-top: 95px;
+    margin-bottom: 60px;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: bounceInRight;
+    animation-name: bounceInRight;
+}
+@-webkit-keyframes bounceInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(2000px);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translateX(-30px);
+    }
+    80% {
+        -webkit-transform: translateX(10px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+    }
+}
+@keyframes bounceInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateX(-30px);
+    }
+    80% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+/*Wrapper 2, Page 2 --------------*/
+
+#wrapper_2 {
+    background-color: white;
+    width: auto;
+    height: 1000px;
+    margin-right: auto;
+    margin-right: auto;
+}
+/*** Image ****/
+
+.bioSite_image {
+    align-content: center;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*animation for the image***/
+
+.bioSite_image {
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-top: 95px;
+    margin-bottom: 60px;
+    -webkit-animation-duration: 50s;
+    animation-duration: 10s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: bounceInRight;
+    animation-name: bounceInRight;
+}
+@-webkit-keyframes bounceInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(1000px);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translateX(-30px);
+    }
+    80% {
+        -webkit-transform: translateX(10px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+    }
+}
+@keyframes bounceInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateX(-30px);
+    }
+    80% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+.CaptionSlides, .mySlides {
+    width: auto;
+    height: 500px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: 200px;
+    background-color: lightblue;
+    position: absolute;
+}
+/**Button link***/
+
+.button {
+    background-color: none;
+    width: 300px;
+    margin-top: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+a:link, a:visited {
+    background-color: none;
+    color: black;
+    font-family: 'Anton', sans-serif;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 25px;
+    align-content: center;
+    margin-left: 30px;
+}
+a:hover, a:active {
+    background-color: white;
+    color: lightsalmon;
+}
+/****Container for the project images***/
+
+#container {
+    background-color: white;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#Bsite, #web231, #web, #b5 {
+    width: auto;
+    padding-left: auto;
+    padding-right: auto;
+}
+/*footeer*/
+
+footer {
+    clear: both;
+    padding-top: 10px;
+    margin-top: 10px;
+    background-color: white;
+    font-family: 'Poiret One', monospace;
+    text-align: center;
+    color: white;
+    border-top: 1px solid black;
+}
+/*Icons*/
+
+.facebookicon, .tweetericon, .instagramicon, .github {
+    margin-top: 15px;
+    width: 50px;
+    height: 50px;
+    clear: none;
+    margin-left: 10px;
+}
+.facebookicon:hover, #Bsite:hover, #web331:hover, #web:hover, #b5:hover {
+    opacity: 0.7;
+}
+.tweetericon:hover {
+    opacity: 0.7;
+}
+.instagramicon:hover {
+    opacity: 0.7;
+}
+.location:hover {
+    opacity: 0.7;
+}
+.location {
+    width: 50px;
+    height: 50px;
+    clear: none;
+    margin-right: 10px;
+}
+address {
+    padding-left: 80%;
+}
