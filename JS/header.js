@@ -1,3 +1,9 @@
+/*
+Author: Gabriel Sanchez 
+Date: 3/22/2019
+Code help: https://www.w3schools.com/
+*/
+//Loading page
 var myVar;
 
 function spinWheel() {
@@ -10,7 +16,7 @@ function showPage() {
   document.getElementById("form").style.display = "black";
 }
 
-// new code 
+// new code  Slide Show
 var myIndex = 0;
 carousel();
 
