@@ -19,3 +19,23 @@ html{
 .d-block{
     width: auto;
 }
+/***MP4 video Class */
+.card {
+    padding-top: 50px;
+    width: 70%;
+    height: 700px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+.card-body {
+
+    margin-right: auto;
+    margin-left: auto;
+}
+.video { /**** This on worked to centered the vedeo in the middle **/
+    margin: 0 auto;
+    width: 1000px;
+    display: block;
+}

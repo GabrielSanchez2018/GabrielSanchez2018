@@ -405,3 +405,7 @@ footer {
 address {
     padding-left: 80%;
 }
+/* web-335 this will apply on index.html under web-335*/
+.nav-pills{
+    color: aqua;
+}
