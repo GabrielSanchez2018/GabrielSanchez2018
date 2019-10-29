@@ -20,7 +20,15 @@ html{
     width: auto;
 }
 /***MP4 video Class */
+.wrapper{
+    background-color: white;
+    width: auto;
+    height: auto;
+}
+
 .card {
+    background-color: white;
+    margin-top: 50px;
     padding-top: 50px;
     width: 70%;
     height: 700px;
@@ -30,12 +38,56 @@ html{
     
 }
 .card-body {
-
-    margin-right: auto;
-    margin-left: auto;
+    background-color: white;
+    width: 50%;
+    height: 500px;
+    margin: 10px 10px 10px 10px;  
+    display: inline-block;
+    position: relative;
+    
 }
+.right-colum {
+    background-color: white;
+    width: 35%;
+    height: auto;
+    margin: 140px 150px 10px 10px;
+    display: block;
+    position: relative;
+    float: right;
+}
+#content {
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1cm;
+}
+
 .video { /**** This on worked to centered the vedeo in the middle **/
     margin: 0 auto;
-    width: 1000px;
+    width: 600px;
     display: block;
+    
+}
+
+/*header*/
+.nav-pills {
+    width:auto;
+    margin:0 auto;
+    list-style:none;
+    background-color: black;
+    
+}
+.nav-link{
+    width: 130px;
+    text-align: center;
+    margin: 15px 15px 15px 15px;
+    display: block;
+    color: white;
+}
+.nav-item{
+    display:block;
+text-align:center;
+width:150px; /* fixed width */
+text-decoration:none; 
 }
