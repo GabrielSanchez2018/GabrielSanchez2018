@@ -1,5 +1,6 @@
 /*Gabriel Sanchez
   Date: 10/28/2019
+  Code help: https://www.w3schools.com/
 */
 
 
@@ -10,7 +11,7 @@ html{
     padding-top: 100px;
     padding-bottom: 100px;
     margin-top: 100px;
-    background-color: black;
+    background-color: lightslategray;
     align-items: center;
     display: block;
     margin-left: auto;
@@ -23,6 +24,12 @@ html{
 .d-block{
     width: auto;
 }
+.carosel-control-prev {
+    color: black;
+    background-color: black;
+}
+
+
 /***MP4 video Class */
 .wrapper{
     background-color: white;
@@ -69,7 +76,7 @@ html{
 
 .video { /**** This on worked to centered the vedeo in the middle **/
     margin: 0 auto;
-    width: 600px;
+    width: 1000px;
     display: block;
     
 }
@@ -94,4 +101,69 @@ html{
 text-align:center;
 width:150px; /* fixed width */
 text-decoration:none; 
+}
+
+
+
+/*==========================================
+==========Modal in REST============================*/
+/* The Modal (background) */
+.modal01, .modal02 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: ghostwhite;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 10px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close01, .close02, .close03 {
+  color: rgb(235, 11, 11);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close01:hover, 
+.close01:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close02:hover, 
+.close02:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close03:hover, 
+.close03:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* Boostrap layout */
+.container-fluid {
+    background-color: none;
+    width: 70%;
+    margin-top: 100px;
+}
+#myBtn {
+    margin: 10px 10px 10px 10px;
 }
