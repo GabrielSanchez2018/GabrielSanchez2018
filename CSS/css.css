@@ -2,6 +2,10 @@
   Date: 10/28/2019
   Code help: https://www.w3schools.com/
 */
+/*
+Fonts
+font-family: 'Yanone Kaffeesatz', sans-serif;
+*/
 
 
 html{
@@ -86,21 +90,22 @@ html{
     width:auto;
     margin:0 auto;
     list-style:none;
-    background-color: black;
-    
+    background-color: black;   
 }
 .nav-link{
-    width: 130px;
+    font-size: 30px;
+    width: 120px;
     text-align: center;
     margin: 15px 15px 15px 15px;
     display: block;
     color: white;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 .nav-item{
     display:block;
     text-align:center;
-    width:150px; /* fixed width */
-    text-decoration:none; 
+    width: 150px; /* fixed width */
+    text-decoration: none; 
 }
 
 
@@ -131,7 +136,7 @@ html{
 }
 
 /* The Close Button */
-.close01, .close02, .close03 {
+.close01, .close02, .close03, .close04 {
   color: rgb(235, 11, 11);
   float: right;
   font-size: 28px;
@@ -152,6 +157,12 @@ html{
 }
 .close03:hover, 
 .close03:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close04:hover, 
+.close04:focus {
   color: white;
   text-decoration: none;
   cursor: pointer;
