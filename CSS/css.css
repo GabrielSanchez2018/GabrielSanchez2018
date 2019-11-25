@@ -136,7 +136,7 @@ html{
 }
 
 /* The Close Button */
-.close01, .close02, .close03, .close04 {
+.close01, .close02, .close03, .close04, .close05 {
   color: rgb(235, 11, 11);
   float: right;
   font-size: 28px;
@@ -167,7 +167,12 @@ html{
   text-decoration: none;
   cursor: pointer;
 }
-
+.close05:hover, 
+.close05:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 /* Boostrap layout */
 .container-fluid {
