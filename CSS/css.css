@@ -136,7 +136,7 @@ html{
 }
 
 /* The Close Button */
-.close01, .close02, .close03, .close04, .close05, .close06 {
+.close01, .close02, .close03, .close04, .close05, .close06, .close07 {
   color: rgb(235, 11, 11);
   float: right;
   font-size: 28px;
@@ -175,6 +175,12 @@ html{
 }
 .close06:hover, 
 .close06:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close07:hover, 
+.close07:focus {
   color: white;
   text-decoration: none;
   cursor: pointer;

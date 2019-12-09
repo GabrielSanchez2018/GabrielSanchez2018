@@ -13,6 +13,7 @@ var modal03 = document.getElementById("videoModal03");
 var modal04 = document.getElementById("videoModal04");
 var modal05 = document.getElementById("videoModal05");
 var modal06 = document.getElementById("videoModal06");
+var modal07 = document.getElementById("videoModal07");
 
 
 
@@ -23,6 +24,7 @@ var btn03 = document.getElementById("videoBtn03");
 var btn04 = document.getElementById("videoBtn04");
 var btn05 = document.getElementById("videoBtn05");
 var btn06 = document.getElementById("videoBtn06");
+var btn07 = document.getElementById("videoBtn07");
 
 
 // Get the <span> element that closes the modal
@@ -32,6 +34,7 @@ var span03 = document.getElementsByClassName("close03")[0];
 var span04 = document.getElementsByClassName("close04")[0];
 var span05 = document.getElementsByClassName("close05")[0];
 var span06 = document.getElementsByClassName("close06")[0];
+var span07 = document.getElementsByClassName("close07")[0];
 
 
 // When the user clicks on the button, open the modal
@@ -53,6 +56,9 @@ btn05.onclick = function() {
 btn06.onclick = function() {
   modal06.style.display = "block";
 }
+btn07.onclick = function() {
+  modal07.style.display = "block";
+}
 // When the user clicks on <span> (x), close the modal
 span01.onclick = function() {
   modal01.style.display = "none";
@@ -71,6 +77,9 @@ span05.onclick = function() {
 }
 span06.onclick = function() {
   modal06.style.display = "none";
+}
+span07.onclick = function() {
+  modal07.style.display = "none";
 }
 // When the user clicks anywhere outside of the modal, close it
 
@@ -103,5 +112,10 @@ window.onclick = function(event) {
 window.onclick = function(event) {
   if (event.target === modal06) {
     modal06.style.display = "none";
+  }
+}
+window.onclick = function(event) {
+  if (event.target === modal07) {
+    modal07.style.display = "none";
   }
 }
