@@ -59,45 +59,28 @@ Date: 10/28/2019
           
       </div>
     -->
-  <div id="wrapper_1">
-    <!--Vertical line-->
-    <div class="vl"></div><!--Vertical Text-->
-    <div class="vertical_text">
-      <h1 id="vertical_text">Portfolio</h1>
-    </div><!--Name Div-->
-    <div class="gabrielName">
-      <h1 id="gabrielName">Gabriel</h1>
-      <h1 id="gabriel_lastname">Sanchez</h1>
-    </div>
-    <div class="gabo_Photo"><img alt="Gabo's Foto" src="../IMAGES/Gabo.jpeg"></div><!---Paragraph about me-->
-    <div id="wrapper">
-      <p class="about_me">Hello,<br>
-      My name is Gabriel Sanchez, I am 27 years old. I have an Associate's degree Computer Science, Networking. I am currently attending Bellevue University, in Bellevue, NE for Web Development.</p>
-    </div>
-  </div>
-  <div id="wrapper_2">
-    <img class="bioSite_image" src="../IMAGES/Projects.PNG"> <!--Gallery test-->
-    <div class="CaptionSlides"><img class="mySlides" height="464" src="../IMAGES/Biosite_Images/img1.PNG" width="950"> <img class="mySlides" height="464" src="../IMAGES/Biosite_Images/img2.PNG" width="950"> <img class="mySlides" height="464" src="../IMAGES/Biosite_Images/img3.PNG" width="950"> <img class="mySlides" height="464" src="../IMAGES/Biosite_Images/img12.PNG" width="950"> <img class="mySlides" height="464" src="../IMAGES/Biosite_Images/img7.PNG" width="950"> <img class="mySlides" height="464" src="../IMAGES/Biosite_Images/img8.PNG" width="950"> <img class="mySlides" height="464" src="../IMAGES/Biosite_Images/img9.PNG" width="950"> <img class="mySlides" height="464" src="../IMAGES/porfolio_pic/B2.PNG" width="950"> <img class="mySlides" height="464" src="../IMAGES/porfolio_pic/B4.PNG"> <img class="mySlides" height="464" src="../IMAGES/web230_231/A5.PNG" width="950"> <img class="mySlides" height="464" src="../IMAGES/web230_231/A4.PNG"></div>
-    <div class="button">
-      <a href="https://gabrielsanchez2018.github.io/bioSite/">Visit the Biosite</a>
-    </div>
-    <script>
-          
-    var myIndex = 0;
-    carousel();
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
 
-    function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    };
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 3000); // Change image every 2 seconds
-    }
-    </script>
+          <img alt="Gabo's Foto" src="../IMAGES/Gabo.jpeg">
+          
+        </div>
+        <div class="col-md-8">
+          <p>Hello,<br>
+            My name is Gabriel Sanchez, I am 27 years old. I am from a little town in Guanajuato, Mexico, but currently living in Omaha, Nebraska since 2009. I have an Associate's degree in Computer Science, Networking. Since I was little, I enjoyed technology and that is why I started a career in the IT field. I am currently attending Bellevue University, in Bellevue, NE for Web Development.</p>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid-2">
+      <div class="row">
+        <div class="col-md-12">
+          <p id="project-text">Projects</p>
+        </div>
+      </div>
+    </div>
     <div id="container">
       <div id="Links_Projects">
         <a href="https://gabrielsanchez2018.github.io/bioSite/" target="blank"><img id="Bsite" src="../IMAGES/Biosite.PNG"></a> <a href="https://github.com/GabrielSanchez2018/web-231" target="blank"><img id="web331" src="../IMAGES/B2.PNG"></a> <a href="https://github.com/GabrielSanchez2018/web-231" target="blank"><img id="web" src="../IMAGES/web_200/img3.PNG"></a> <a href="https://gabrielsanchez2018.github.io/GabrielSanchez2018/HTML/index.html" target="blank"><img id="b5" src="../IMAGES/B5.PNG"></a>
